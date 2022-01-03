@@ -13,7 +13,13 @@
         
         .responsive {
             float: left;
-            margin: 10px;
+            padding: 0 6px;
+            width: 25%;
+        }
+        
+        div.photo img {
+            width: 100%;
+            height: auto;
         }
         
         .photo {
@@ -22,6 +28,18 @@
         
         div.desc {
             text-align: center;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 50%;
+            }
+        }
+        
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
         }
     </style>
 </head>
