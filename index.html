@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>UI Design</title>
     <style>
         * {
@@ -13,9 +14,8 @@
         
         .responsive {
             float: left;
-            padding: 0 6px;
+            padding: 5px;
             width: 25%;
-            margin-bottom: 10px;
         }
         
         div.photo img {
@@ -23,8 +23,12 @@
             height: auto;
         }
         
-        .photo {
-            border: 2px solid black;
+        div.photo {
+            border: 1px solid gray;
+        }
+        
+        div.photo:hover {
+            border: 3px solid black;
         }
         
         div.desc {
@@ -32,13 +36,13 @@
             text-align: center;
         }
         
-        @media only screen and (max-width: 700px) {
+        @media screen and (max-width: 700px) {
             .responsive {
                 width: 50%;
             }
         }
         
-        @media only screen and (max-width: 500px) {
+        @media screen and (max-width: 500px) {
             .responsive {
                 width: 100%;
             }
@@ -56,7 +60,7 @@
     <div class="responsive">
         <div class="photo">
             <img src="2.png" alt="photo">
-            <div class="desc">Add a description of the image here</div>
+            <div class="desc"> Add a description of the image here</div>
         </div>
     </div>
     <div class="responsive">
