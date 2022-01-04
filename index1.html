@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>UI Design with Flex</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .responsive {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+        
+        .container {
+            max-width: 25%;
+            flex: 25%;
+            border: 1px solid gray;
+            border-radius: 10px;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+        
+        div.container:hover {
+            border: 3px solid black;
+        }
+        
+        div.desc {
+            text-align: center;
+        }
+        
+        @media (max-width: 700px) {
+            .container {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        
+        @media (max-width: 500px) {
+            .container {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="responsive">
+        <div class="container">
+            <img src="1.png" alt="photo">
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="container">
+            <img src="2.png" alt="photo">
+            <div class="desc"> Add a description of the image here</div>
+        </div>
+        <div class="container">
+            <img src="3.png" alt="photo">
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="container">
+            <img src="4.gif" alt="photo">
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="container">
+            <img src="5.png" alt="photo">
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="container">
+            <img src="6.png" alt="photo">
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="container">
+            <img src="7.jpg" alt="photo">
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="container">
+            <img src="8.png" alt="photo">
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
